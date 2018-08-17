@@ -371,6 +371,7 @@
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\ChangeTex.cs" />
     <Compile Include="Assets\Scripts\Cloud.cs" />
+    <Compile Include="Assets\Scripts\SmoxMaster.cs" />
     <Compile Include="Assets\Scripts\UnityHTTP-master\AssemblyInfo.cs" />
     <Compile Include="Assets\Scripts\UnityHTTP-master\lib\JSON.cs" />
     <Compile Include="Assets\Scripts\UnityHTTP-master\src\CookieJar.cs" />
