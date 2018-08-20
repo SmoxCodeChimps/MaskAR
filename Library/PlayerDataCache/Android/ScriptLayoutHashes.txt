@@ -1,8 +1,14 @@
 Android
 PlayerPath?
-C:/Users/Edosiho/Documents/Color/benis.apk
+F:/ProjectsPC/GitHub/MaskAR/SmoxV_0_1_2.apk
 SceneListBegin?
-Assets/Scenes/SampleScene.unity
+Assets/Scenes/00Splash.unity
+Assets/Scenes/01Login.unity
+Assets/Scenes/02MainMenu.unity
+Assets/Scenes/03ARscanner.unity
+Assets/Scenes/04ProjectEdit.unity
+Assets/Scenes/05Settings.unity
+Assets/Scenes/06UserInformation.unity
 SceneListEnd?
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SamplesNavigationHandler
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -245,6 +251,7 @@ fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networki
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DefaultTrackableEventHandler
 e53cc67d84060d628c7f03fc725766d8 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 392c5b921098bd4c139d9146d0efa6d7 Unity.TextMeshPro.dll:TMPro.TMP_Settings
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SmoxMaster
 486cd95c82d8305219c352c06b776e1f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 9d863b523b577f5c3d915351a74cd338 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -253,6 +260,7 @@ cea0d805b2141f35e9e5fbb4c74f8a36 Assembly-CSharp.dll:.InitErrorHandler
 70f7dc248db3379548a88e8d4fa049f8 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
+c20b9658ba4f3ccdabf43b748d5fe71d Assembly-CSharp.dll:.ChangeScene
 1abd91f4d7339e1ed5fe10c4f379b6f0 Assembly-CSharp.dll:.PlaneManager
 4f170d1d775e754e9826ac875728521b Assembly-CSharp.dll:.FadeObject
 1a90b221dc803408fbafa883c12bcab4 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
