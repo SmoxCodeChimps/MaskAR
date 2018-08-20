@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-F:/ProjectsPC/GitHub/MaskAR/SmoxV_0_1_2.apk
+F:/ProjectsPC/GitHub/MaskAR/SmoxV_0_1_3.apk
 SceneListBegin?
 Assets/Scenes/00Splash.unity
 Assets/Scenes/01Login.unity
@@ -245,7 +245,7 @@ da21fc3f8056b1f91c3dd09c7bf4f90a UnityEngine.Networking.dll:UnityEngine.Networki
 fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 7ca56e063bd071986fff4f513cc4f477 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.QualityDialog
-015dd960ad588de8e6220ef784c6db04 Assembly-CSharp.dll:.ChangeTex
+07bb9e20ffb7ed355a870e13e1d974c9 Assembly-CSharp.dll:.ChangeTex
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Drone
 72a8523b432c0a5317826b7a9e0a0e79 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DefaultTrackableEventHandler
