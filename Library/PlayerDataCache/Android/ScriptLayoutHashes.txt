@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Edosiho/Documents/Color/sss.apk
+F:/ProjectsPC/GitHub/MaskAR/SmoxV_0_1_4.apk
 SceneListBegin?
 Assets/Scenes/00Splash.unity
 Assets/Scenes/01Login.unity
