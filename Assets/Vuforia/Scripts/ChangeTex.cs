@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ChangeTex : MonoBehaviour {
     public string FileName = "C:\\popu.png";
     public GameObject portrait;
@@ -108,6 +109,25 @@ public class ChangeTex : MonoBehaviour {
 
     }
 
+
+    public void newChange(Texture2D tex){
+        GameObject portrait = GameObject.Find("Canvas/Portrato");
+        RawImage image = portrait.GetComponent<RawImage>();
+        //image.color = new Color(1F, 1F, 1F, 1); //Changes visibility
+        Material mat = image.material;
+        Debug.Log("portrait color: " + image.color);
+        image.texture = tex;
+        //image.color = new Color(1F, 1F, 1F, 0F);
+        //mat.color = new Color(1F, 1F, 1F, 1F);
+        Debug.Log("Material: " + mat.color);
+        mat.mainTexture = tex;
+        Debug.Log("From button: " + image.texture);
+
+        //mat.mainTexture = tex;
+
+
+    }
+
     public void ImgLoad(){
         GameObject portrait = GameObject.Find("Canvas/CustomImage/Loader");
 
@@ -191,6 +211,42 @@ public class ChangeTex : MonoBehaviour {
             Debug.Log("Material: " + mat.color);
             mat.mainTexture = tex;
             Debug.Log("From button: " + image.texture);
+        }
+    }
+
+    public void showImage(string name){
+      
+        string url = "localhost:3000/groups/"+name +"/portrait";
+        WWW www = new WWW(url);
+        StartCoroutine(WaitForRequest(www));
+    }
+    IEnumerator WaitForRequest(WWW www)
+    {
+        yield return www;
+
+        // check for errors
+        if (www.error == null)
+        {
+            Debug.Log(www.text);
+            StartCoroutine(getimage(www.text));
+            
+        }
+        else
+        {
+            Debug.Log("WWW Error: " + www.error);
+        }
+       
+    }
+
+    IEnumerator getimage(string text)
+    {
+        // Start a download of the given URL
+        using (WWW www = new WWW(text))
+        {
+            // Wait for download to complete
+            yield return www;
+            // assign texture
+            newChange(www.texture);
         }
     }
 }

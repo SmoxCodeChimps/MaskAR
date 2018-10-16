@@ -43,6 +43,7 @@ public class Cloud : MonoBehaviour, ICloudRecoEventHandler{
         }
     }
     void OnGUI(){
+       
         // Display current 'scanning' status
         GUI.Box(new Rect(100, 100, 200, 50), mIsScanning ? "Escaneando" : "No escaneando");
         // Display metadata of latest detected cloud-target
@@ -59,17 +60,20 @@ public class Cloud : MonoBehaviour, ICloudRecoEventHandler{
             
 
         }
+        
     }
     public void OnNewSearchResult(TargetFinder.TargetSearchResult targetSearchResult){
         // do something with the target metadata
         mTargetMetadata = targetSearchResult.TargetName;
+
+        ChangeTex tex = GameObject.Find("Button").AddComponent<ChangeTex>();
+        tex.showImage(mTargetMetadata);
         // stop the target finder (i.e. stop scanning the cloud)
-        if (image.texture.Equals(null))
-        {
+        if (image.texture.Equals(null)){
             image.color = new Color(1F, 1F, 1F, 0.5F);
         }
         else{
-            image.color = new Color(1F, 1F, 1F, 1);
+            image.color = new Color(1F, 1F, 1F, 1F);
         }
         mCloudRecoBehaviour.CloudRecoEnabled = false;
         
