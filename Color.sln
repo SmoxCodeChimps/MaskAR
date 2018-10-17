@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{9752E8A1-826F-9BCA-1E5C-67BD6FBC8067}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color", "Assembly-CSharp.csproj", "{9752E8A1-826F-9BCA-1E5C-67BD6FBC8067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{F17F85BB-EE87-F854-9072-C467AD422FE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color", "Assembly-CSharp-firstpass.csproj", "{F17F85BB-EE87-F854-9072-C467AD422FE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{31DED987-4F1C-EAFC-6181-83B02F4DACF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color", "Assembly-CSharp-Editor.csproj", "{31DED987-4F1C-EAFC-6181-83B02F4DACF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{F2EA417B-3B60-63D6-F89D-72FBC98B4B51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color", "Assembly-CSharp-Editor-firstpass.csproj", "{F2EA417B-3B60-63D6-F89D-72FBC98B4B51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

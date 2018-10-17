@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/01Login.unity
-=======
-- path: Assets/Scenes/00Splash.unity
->>>>>>> 4935e419cb403eff69310f19df68c7aefac4d55c
   isLoaded: 1
   isActive: 1

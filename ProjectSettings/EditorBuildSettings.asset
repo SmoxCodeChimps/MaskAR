@@ -26,19 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/06UserInformation.unity
     guid: 78cc7176ce5c9394b8c0ea71c6626f0c
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/07Signup.unity
-    guid: 3296f4a42fbab6e4f8c50726a411bf7e
-  - enabled: 1
-    path: Assets/Scenes/08SignIn.unity
-    guid: 0596c08eb643c9e49be4d7f565edcf38
-  - enabled: 1
-    path: Assets/Scenes/09JoinGroup.unity
-    guid: 70d510745cc87ad47a048a1ab8dc497a
-  - enabled: 1
-    path: Assets/Scenes/10NewGroup.unity
-    guid: 6e58538358f0bf74ab84c5101a402fae
   m_configObjects: {}
