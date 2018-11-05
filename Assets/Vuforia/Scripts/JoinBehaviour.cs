@@ -8,7 +8,9 @@ public class JoinBehaviour : MonoBehaviour {
     public Button butt;
 	// Use this for initialization
 	void Start () {
-        string url = "localhost:3000/groups/appIndex";
+      //  string url = "http://18.216.168.174:3003/groups/appIndex";
+        string url = Users.baseurl + "groups/appIndex";
+
         WWW www = new WWW(url);
         StartCoroutine(WaitForRequest(www));
     }
@@ -36,7 +38,9 @@ public class JoinBehaviour : MonoBehaviour {
         Dictionary<string, string> headers = new Dictionary<string, string>();
         Debug.Log("cooks: " + Users.cookie);
         headers.Add("Cookie", "_session_id=" + Users.cookie);
-        string url = "localhost:3000/groups/" + id + "/join";
+      //  string url = "http://18.216.168.174:3003/groups/" + id + "/join";
+        string url = Users.baseurl + "groups/" + id + "/join";
+
         WWW www = new WWW(url,null,headers);
         StartCoroutine(Joins(www));
     }

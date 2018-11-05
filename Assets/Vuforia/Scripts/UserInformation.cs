@@ -11,7 +11,8 @@ public class UserInformation : MonoBehaviour {
     Dictionary<string, string> headers;
     // Use this for initialization
     void Start () {
-        string url = "localhost:3000/users/getUser";
+        //string url = "http://18.216.168.174:3003/users/getUser";
+        string url = Users.baseurl+"users/getUser";
         headers = new Dictionary<string, string>();
         Debug.Log("cooks: " + Users.cookie);
         headers.Add("Cookie", "_session_id=" + Users.cookie);
@@ -60,7 +61,8 @@ public class UserInformation : MonoBehaviour {
         Dictionary<string, string> headers = new Dictionary<string, string>();
         Debug.Log("cooks: " + Users.cookie);
         headers.Add("Cookie", "_session_id=" + Users.cookie);
-        string url = "localhost:3000/groups/" + user.group_id + "/leaveGroup";
+       // string url = "http://18.216.168.174:3003/groups/" + user.group_id + "/leaveGroup";
+        string url = Users.baseurl + "groups/" + user.group_id + "/leaveGroup";
         WWW www = new WWW(url, null, headers);
         StartCoroutine(Leaves(www));
     }
@@ -93,7 +95,8 @@ public class UserInformation : MonoBehaviour {
 
             Debug.Log(www.text);
             user= JsonUtility.FromJson<Usuario>(www.text);
-            string urlcompas = "localhost:3000/groups/" + user.group_id + " /compas";
+          //  string urlcompas = "http://18.216.168.174:3003/groups/" + user.group_id + " /compas";
+            string urlcompas = Users.baseurl + "groups/" + user.group_id + " /compas";
 
             GameObject usuarioGO = GameObject.Find("Canvas/UserHeader");
             Text username = usuarioGO.GetComponent<Text>();
@@ -125,7 +128,8 @@ public class UserInformation : MonoBehaviour {
 
         if(username.text != "" || password.text != "")
         {
-            string url = "localhost:3000/users/appEdit";
+           // string url = "http://18.216.168.174:3003/users/appEdit";
+            string url = Users.baseurl+"users/appEdit";
             StartCoroutine(UpUser(url, username.text, password.text));
         }
         else
@@ -163,7 +167,9 @@ public class UserInformation : MonoBehaviour {
 
     public void Delet()
     {
-        string url = "localhost:3000/logout";
+       // string url = "http://18.216.168.174:3003/logout";
+        string url = Users.baseurl+"logout";
+
         headers = new Dictionary<string, string>();
         Debug.Log("cooks: " + Users.cookie);
         headers.Add("Cookie", "_session_id=" + Users.cookie);

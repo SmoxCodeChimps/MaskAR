@@ -10,7 +10,8 @@ public class ProjectEdit : MonoBehaviour {
     public string Groupid;
     // Use this for initialization
     void Start () {
-        string url = "localhost:3000/user/groop";
+        //string url = "http://18.216.168.174:3003/user/groop";
+        string url = Users.baseurl + "users/groop";
         Dictionary<string, string> headers = new Dictionary<string, string>();
         Debug.Log("cooks: " + Users.cookie);
         headers.Add("Cookie", "_session_id=" + Users.cookie);
@@ -36,7 +37,9 @@ public class ProjectEdit : MonoBehaviour {
     }
     public void GetGroup(string id)
     {
-        string url = "localhost:3000/groups/"+id;
+        //string url = "http://18.216.168.174:3003/groups/"+id;
+        string url = Users.baseurl + "groups/" + id;
+
         WWW www = new WWW(url);
         StartCoroutine(GetGroup(www));
     }
@@ -70,7 +73,8 @@ public class ProjectEdit : MonoBehaviour {
     public void DoImages(string name,string dir,string img)
     {
 
-        string url = "localhost:3000/groups/" + name + img;
+        //string url = "http://18.216.168.174:3003/groups/" + name + img;
+        string url = Users.baseurl + "groups/" + name + img;
         WWW www = new WWW(url);
         StartCoroutine(coTracker(www,dir));
     }
@@ -154,26 +158,27 @@ public class ProjectEdit : MonoBehaviour {
 
 
     public void ChangeTrackerImage() {
-        Texture2D tex = LoadPNG(FileName); // FOR TEST IN PC
-        //Texture2D tex = setImage(1000); //FOR MObILE DEVICES
+        //Texture2D tex = LoadPNG(FileName); // FOR TEST IN PC
+        Texture2D tex = setImage(1000); //FOR MObILE DEVICES
         changeTracker(tex, "Canvas/Tracker/Loader");
       
 
     }
     public void ChangePortraitImage()
     {
-        Texture2D tex = LoadPNG(FileName); // FOR TEST IN PC
-        //Texture2D tex = setImage(1000); //FOR MObILE DEVICES
+        //Texture2D tex = LoadPNG(FileName); // FOR TEST IN PC
+        Texture2D tex = setImage(1000); //FOR MObILE DEVICES
         changeTracker(tex, "Canvas/Portrait/Loader");
     }
     public void updateGroup(){
        
-        string url = "localhost:3000/groups/appEdit";
+        //string url = "http://18.216.168.174:3003/groups/appEdit";
+        string url = Users.baseurl + "groups/appEdit";
 
         GameObject portrait = GameObject.Find("Canvas/Portrait/Loader");
         RawImage imagePortrait = portrait.GetComponent<RawImage>();
         GameObject tracker = GameObject.Find("Canvas/Tracker/Loader");
-        RawImage imageTracker = portrait.GetComponent<RawImage>();
+        RawImage imageTracker = tracker.GetComponent<RawImage>();
         Texture2D marco = (Texture2D)imagePortrait.texture;
         Texture2D target = (Texture2D)imageTracker.texture;
         StartCoroutine(UpdateCoroutine(url,  Groupid,  target,  marco));
@@ -196,6 +201,9 @@ public class ProjectEdit : MonoBehaviour {
         if (www.error == null)
         {
             Debug.Log("WWW OK!: " + www.responseCode);
+           
+
+
 
         }
         else

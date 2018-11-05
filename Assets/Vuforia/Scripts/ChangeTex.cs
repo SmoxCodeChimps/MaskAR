@@ -216,7 +216,9 @@ public class ChangeTex : MonoBehaviour {
 
     public void showImage(string name){
       
-        string url = "localhost:3000/groups/"+name +"/portrait";
+      //  string url = "http://18.216.168.174:3003/groups/"+name +"/portrait";
+        string url = Users.baseurl + "groups/" + name + "/portrait";
+
         WWW www = new WWW(url);
         StartCoroutine(WaitForRequest(www));
     }

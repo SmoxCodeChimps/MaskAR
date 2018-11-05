@@ -16,7 +16,9 @@ public class MainMenu : MonoBehaviour {
 
     public void getGroup(){
 
-        string url = "localhost:3000/users/groop";
+       // string url = "http://18.216.168.174:3003/users/groop";
+        string url = Users.baseurl+"users/groop";
+
         Dictionary<string, string> headers = new Dictionary<string, string>();
         Debug.Log("cooks: " + Users.cookie);
         headers.Add("Cookie","_session_id="+ Users.cookie);

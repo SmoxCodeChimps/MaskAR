@@ -479,7 +479,7 @@ public static class NativeGallery
 	#endregion
 
 	#region Utility Functions
-	public static Texture2D LoadImageAtPath( string imagePath, int maxSize = -1, bool markTextureNonReadable = true,
+	public static Texture2D LoadImageAtPath( string imagePath, int maxSize = -1, bool markTextureNonReadable = false,
 		bool generateMipmaps = true, bool linearColorSpace = false )
 	{
 		if( string.IsNullOrEmpty( imagePath ) )
@@ -534,7 +534,60 @@ public static class NativeGallery
 		return result;
 	}
 
-	public static ImageProperties GetImageProperties( string imagePath )
+    public static byte[] getBytesAtPath(string imagePath, int maxSize = -1, bool markTextureNonReadable = false,
+        bool generateMipmaps = true, bool linearColorSpace = false)
+    {
+        byte[] resu = null;
+        if (string.IsNullOrEmpty(imagePath))
+            throw new ArgumentException("Parameter 'imagePath' is null or empty!");
+
+        if (!File.Exists(imagePath))
+            throw new FileNotFoundException("File not found at " + imagePath);
+
+        if (maxSize <= 0)
+            maxSize = SystemInfo.maxTextureSize;
+
+#if !UNITY_EDITOR && UNITY_ANDROID
+		string loadPath = AJC.CallStatic<string>( "LoadImageAtPath", Context, imagePath, TemporaryImagePath, maxSize );
+#elif !UNITY_EDITOR && UNITY_IOS
+		string loadPath = _NativeGallery_LoadImageAtPath( imagePath, TemporaryImagePath, maxSize );
+#else
+        string loadPath = imagePath;
+#endif
+
+        String extension = Path.GetExtension(imagePath).ToLowerInvariant();
+        TextureFormat format = (extension == ".jpg" || extension == ".jpeg") ? TextureFormat.RGB24 : TextureFormat.RGBA32;
+
+
+        try
+        {
+    
+                resu = File.ReadAllBytes(loadPath);
+               
+            
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e);
+
+            return null;
+        }
+        finally
+        {
+            if (loadPath != imagePath)
+            {
+                try
+                {
+                    File.Delete(loadPath);
+                }
+                catch { }
+            }
+        }
+
+        return resu;
+    }
+
+    public static ImageProperties GetImageProperties( string imagePath )
 	{
 		if( !File.Exists( imagePath ) )
 			throw new FileNotFoundException( "File not found at " + imagePath );
