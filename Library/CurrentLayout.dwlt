@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 1067
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 97
+  controlID: 33
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,8 +90,8 @@ MonoBehaviour:
     y: 0
     width: 544
     height: 678
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -145,7 +145,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1117
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -208,10 +208,10 @@ MonoBehaviour:
     y: 0
     width: 1596
     height: 1067
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 98
+  controlID: 34
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,10 +232,10 @@ MonoBehaviour:
     y: 0
     width: 1596
     height: 678
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 99
+  controlID: 35
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,8 +299,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -200
-    m_HBaseRangeMax: 200
+    m_HBaseRangeMin: -524
+    m_HBaseRangeMax: 524
     m_VBaseRangeMin: -320
     m_VBaseRangeMax: 320
     m_HAllowExceedBaseRangeMin: 1
@@ -534,9 +534,9 @@ MonoBehaviour:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 603c0000
-    m_LastClickedID: 15456
-    m_ExpandedIDs: 00000000f43a00002a3b0000783b00009a3d0000d43d00008e3e0000943e000000ca9a3b
+    m_SelectedIDs: 662e0000
+    m_LastClickedID: 11878
+    m_ExpandedIDs: 000000003a2c0000922c0000082d00002630000086300000a6310000b231000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -564,7 +564,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f43a00002a3b0000783b00009a3d0000d43d00008e3e0000943e0000
+    m_ExpandedIDs: 000000003a2c0000922c0000082d00002630000086300000a6310000b2310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000e8960000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -682,21 +682,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 4cc6fafff2cefaffc6e5faff30e7faff4ee8faffb6effaffccf0fafffaf1faff0807fbff0e14fbfffa14fbff3029fbff602afbfff62bfbffd05dfbfffe63fbff606afbff3e70fbff7076fbffea77fbff0879fbff2a7afbff2080fbff4e81fbffa886fbffc687fbffec88fbff128afbff8c94fbff2098fbffa89bfbff7a9efbffb6a0fbff36a3fbffc8a6fbff9cbffbff32e6fbffb2e7fbfff0f0fbffc206fcfff219fcffe22ffcff0831fcff9250fcff3052fcff14e6fcff32e7fcff9ce8fcff18eafcff36ebfcff56ecfcffd0fefcff8600fdff6a5bfdfff265fdff3488fdff5289fdff9626feff9491feffcc92feffc8e9feff080bffff460cffff2a2affff482bffff1e36ffff7cc3ffff12c8ffff82c9fffff0caffff4accffff70cdffff22d4ffff0000000070430000a4430000d6430000724500007a45000086450000924500009c450000d2460000ea4600002c48000040480000604800006e480000bc490000fa4900004c4a00007c4a0000b84b0000d24b00004c4c0000464e0000544e0000804e0000984f0000305000003c50000062500000ea5000008e550000ac550000d4550000de55000082570000d6580000565b00005a5c0000fe5d0000ca5f00006c60000014620000c8640000e86700002e680000e66900009a6d0000a86e000000700000ac70000094720000a8720000ce740000a276000088780000a4780000ce7a0000687e0000b47f0000bc800000da80000002810000
+    m_ExpandedIDs: 10f4ffff0af5ffff98f7ffffa8f7ffffacf7ffffb2f7ffffbaf7ffffbef7ffffc6f7ffffdef7ffffe2f7ffffe8f7ffffeef7ffffe6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: ARCamera
-      m_OriginalName: ARCamera
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 21214
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 

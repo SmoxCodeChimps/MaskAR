@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Edosiho/Documents/Color/SmoxV_0_1_4.apk
+F:/ProjectsPC/GitHub/MaskAR/SmoxV_0_1_5.apk
 SceneListBegin?
 Assets/Scenes/00Splash.unity
 Assets/Scenes/01Login.unity
@@ -225,6 +225,7 @@ d3da7ce95ffcc502ffbb2686430dd0a5 Assembly-CSharp.dll:.CloudRecoEventHandler
 31fa0f7b589e3525c4f2961e001e22e2 Assembly-CSharp.dll:.Fissure
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.RotateAroundCylinder
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:UnityHTTP.DiskCache
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ScreenshotNoUi
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:UnityHTTP.ResponseCallbackDispatcher
 486cd95c82d8305219c352c06b776e1f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 390f3051aad9841b6d3a19a377a9832d Assembly-CSharp.dll:.MultiTargetTrackableEventHandler
